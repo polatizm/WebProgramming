@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1 - Web Programlama Testi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        input, select, textarea {
+            font-size: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            resize: vertical;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 25px;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Web Programlama Testi</h2>
+
+        <p>1. HTML’in açılımı nedir?</p>
+        <input type="radio" name="q1" value="A"> Hyper Text Markup Language <br>
+        <input type="radio" name="q1" value="B"> Home Tool Markup Language <br>
+        <input type="radio" name="q1" value="C"> Hyperlinks Text Making Logic <br>
+
+        <p>2. CSS ne işe yarar?</p>
+        <input type="checkbox" name="q2" value="tasarim"> Tasarımı düzenler <br>
+        <input type="checkbox" name="q2" value="veritabani"> Veritabanı yönetir <br>
+        <input type="checkbox" name="q2" value="html"> HTML etiketlerini değiştirir <br>
+
+        <p>3. Aşağıdakilerden hangisi bir JavaScript framework’üdür?</p>
+        <select name="q3">
+            <option>React</option>
+            <option>Flask</option>
+            <option>Django</option>
+            <option>Laravel</option>
+        </select>
+
+        <p>4. “input” etiketi hangi HTML etiketinin içinde kullanılır?</p>
+        <input type="text" name="q4" placeholder="Cevabınızı yazınız">
+
+        <p>5. Web sitelerinde yorum veya açıklama yazısı almak için hangi etiket kullanılır?</p>
+        <textarea name="q5" rows="3" placeholder="Etiket adını yazınız..."></textarea>
+
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
