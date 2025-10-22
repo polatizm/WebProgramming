@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haftalık Ders Programı - Internal CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            background-color: #e6f7ff;
+        }
+
+        p {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Haftalık Ders Programı</h1>
+
+    <table>
+        <tr>
+            <th>Gün</th>
+            <th>09:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+        </tr>
+
+        <tr>
+            <td>Pazartesi</td>
+            <td>Web Tabanlı Programlama</td>
+            <td>Modelleme ve Tasarım</td>
+            <td>Boş</td>
+        </tr>
+
+        <tr>
+            <td>Salı</td>
+            <td>İngilizce</td>
+            <td>Bilişim Öğretim Programları</td>
+            <td>Boş</td>
+        </tr>
+
+        <tr>
+            <td>Çarşamba</td>
+            <td>Boş</td>
+            <td>Veri Tabanı</td>
+            <td>Modelleme ve Tasarım</td>
+        </tr>
+
+        <tr>
+            <td>Perşembe</td>
+            <td>Eğitsel Video Tasarımı</td>
+            <td>Boş</td>
+            <td>Boş</td>
+        </tr>
+
+        <tr>
+            <td>Cuma</td>
+            <td>Web Tabanlı Programlama</td>
+            <td>Veri Tabanı</td>
+            <td>Bilişim Öğretim Programları</td>
+        </tr>
+    </table>
+
+    <p>Bu tablo Internal CSS kullanılarak hazırlanmıştır.</p>
+
+</body>
+</html>
