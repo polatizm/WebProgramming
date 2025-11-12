@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 6 - CSS Animasyon Görevi</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        /* 1️⃣ Yukarı - Aşağı hareket */
+        .updown {
+            background-color: #ff6666;
+            position: relative;
+            animation: updown 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes updown {
+            from {
+                top: 0;
+            }
+
+            to {
+                top: 100px;
+            }
+        }
+
+        /* 2️⃣ Büyüyüp küçülme + renk değişimi */
+        .grow {
+            background-color: #66b3ff;
+            animation: grow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(1);
+                background-color: #66b3ff;
+            }
+
+            50% {
+                transform: scale(1.5);
+                background-color: #33cc33;
+            }
+
+            100% {
+                transform: scale(1);
+                background-color: #66b3ff;
+            }
+        }
+
+        /* 3️⃣ Transparanlık değişimi */
+        .fade {
+            background-color: #ffcc00;
+            animation: fade 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0.3;
+            }
+        }
+
+        /* 4️⃣ Sağa - Sola hareket */
+        .leftright {
+            background-color: #ff99ff;
+            position: relative;
+            animation: leftright 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes leftright {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 120px;
+            }
+        }
+
+        /* 5️⃣ Dönen */
+        .rotate {
+            background-color: #00cc99;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animasyon Görevi - Sefa Usta</h1>
+
+    <div class="container">
+        <div class="box updown"></div>
+        <div class="box grow"></div>
+        <div class="box fade"></div>
+        <div class="box leftright"></div>
+        <div class="box rotate"></div>
+    </div>
+</body>
+
+</html>
