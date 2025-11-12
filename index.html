@@ -6,100 +6,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sefa Usta | Web Programlama</title>
     <style>
+        /* ===== Genel Site Tasarımı ===== */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
             margin: 0;
-            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #0e0e11;
+            color: #f5f5f5;
+        }
+
+        header {
+            background-color: #121216;
+            padding: 15px 40px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
-        .content {
-            background-color: #fff;
-            padding: 50px 70px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+        header h1 {
+            font-size: 22px;
+            color: #4a9eff;
+            letter-spacing: 0.5px;
         }
 
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            margin-bottom: 30px;
-        }
-
-        ol {
-            list-style-type: decimal;
-            text-align: left;
-            display: inline-block;
-        }
-
-        ul {
-            list-style-type: circle;
-        }
-
-        a {
+        nav a {
+            color: #ddd;
+            margin-left: 20px;
             text-decoration: none;
-            color: #1a0dab;
-            font-weight: 500;
+            transition: 0.3s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        nav a:hover {
+            color: #4a9eff;
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        main p {
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .weeks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .week-card {
+            background: #18181d;
+            border: 1px solid #2b2b33;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .week-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px #4a9eff33;
+        }
+
+        .week-card h3 {
+            color: #4a9eff;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .week-card p {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 16px;
+        }
+
+        /* ===== Butonlar (linkler) ===== */
+        .week-card .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .week-card a {
+            display: inline-block;
+            background: #4a9eff;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .week-card a:hover {
+            background: #2576d6;
+        }
+
+        /* ===== Tablo Sayfaları için Tema Uyumlu CSS ===== */
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #1a1a1f;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: #eee;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px 15px;
+        }
+
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #222;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            background-color: #113355;
+        }
+
+        p {
+            font-style: italic;
+            color: #bbb;
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <h1>Sefa Usta</h1>
-        <ol>
-            <li>1. Hafta
-                <ul>
-                    <li><a href="masal.html" target="_blank">Masal</a></li>
-                </ul>
-            </li>
+    <header>
+        <h1>BTE311 | Web Programlama</h1>
+        <nav>
+            <a href="#hafta1">Hafta 1</a>
+            <a href="#hafta2">Hafta 2</a>
+            <a href="#hafta3">Hafta 3</a>
+            <a href="https://github.com/sefazcy/BTE311-SefaUsta" target="_blank">GitHub</a>
+        </nav>
+    </header>
 
-            <li>2. Hafta
-                <ul>
-                    <li><a href="tablo1.html" target="_blank">tablo1.html</a></li>
-                    <li><a href="tablo2.html" target="_blank">tablo2.html</a></li>
-                    <li><a href="tablo3.html" target="_blank">tablo3.html</a></li>
-                </ul>
-            </li>
+    <main>
+        <h2>Hafta Hafta Ödevler</h2>
+        <p>Hazırlayan: <strong>Sefa Usta</strong> — BÖTE</p>
 
-            <li>3. Hafta
-                <ul>
-                    <li><a href="form1.html" target="_blank">form1.html</a></li>
-                    <li><a href="test1.html" target="_blank">test1.html</a></li>
-                </ul>
-            </li>
+        <div class="weeks">
+            <div class="week-card" id="hafta1">
+                <h3>Hafta 1</h3>
+                <p>Masal Uygulaması</p>
+                <div class="links">
+                    <a href="masal.html" target="_blank">Görüntüle</a>
+                </div>
+            </div>
 
-            <li>4. Hafta
-                <ul>
-                    <li><a href="tablo-inline.html" target="_blank">tablo-inline.html</a></li>
-                    <li><a href="tablo-internal.html" target="_blank">tablo-internal.html</a></li>
-                    <li><a href="tablo-external.html" target="_blank">tablo-external.html</a></li>
-                    <li><a href="daireler.html" target="_blank">daireler.html</a></li>
-                </ul>
-            </li>
+            <div class="week-card" id="hafta2">
+                <h3>Hafta 2</h3>
+                <p>HTML Tablo Çalışması</p>
+                <div class="links">
+                    <a href="tablo1.html" target="_blank">Tablo 1</a>
+                    <a href="tablo2.html" target="_blank">Tablo 2</a>
+                    <a href="tablo3.html" target="_blank">Tablo 3</a>
+                </div>
+            </div>
 
-            <li>5. Hafta
-                <ul>
-                    <li><a href="hafta6.html" target="_blank">hafta6.html</a></li>
-                </ul>
-            </li>
+            <div class="week-card" id="hafta3">
+                <h3>Hafta 3</h3>
+                <p>Form Uygulamaları</p>
+                <div class="links">
+                    <a href="form1.html" target="_blank">Form 1</a>
+                    <a href="test1.html" target="_blank">Test 1</a>
+                </div>
+            </div>
 
-            <li>6. Hafta
-                <ul>
-                    <li><a href="hafta7.html" target="_blank">hafta7.html</a></li>
-                </ul>
-            </li>
-        </ol>
-    </div>
+            <div class="week-card" id="hafta4">
+                <h3>Hafta 4</h3>
+                <p>CSS Tablolar</p>
+                <div class="links">
+                    <a href="tablo-inline.html" target="_blank">Inline</a>
+                    <a href="tablo-internal.html" target="_blank">Internal</a>
+                    <a href="tablo-external.html" target="_blank">External</a>
+                    <a href="daireler.html" target="_blank">Daireler</a>
+                </div>
+            </div>
+
+            <div class="week-card" id="hafta5">
+                <h3>Hafta 5</h3>
+                <p>Kayan Divler Uygulaması</p>
+                <div class="links">
+                    <a href="hafta6.html" target="_blank">Görüntüle</a>
+                </div>
+            </div>
+
+            <div class="week-card" id="hafta6">
+                <h3>Hafta 6</h3>
+                <p>Hareketli Emojiler</p>
+                <div class="links">
+                    <a href="hafta7.html" target="_blank">Görüntüle</a>
+                </div>
+            </div>
+
+            <div class="week-card" id="hafta7">
+                <h3>Hafta 7</h3>
+                <p>Orman Temalı Galeri</p>
+                <div class="links">
+                    <a href="hafta7.html" target="_blank">Görüntüle</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
